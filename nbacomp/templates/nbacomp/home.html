@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <center><h1>NBA Player Comparison</h1></center>
+    <hr>
+    <b>Primary Skill</b>
+        <option value="1">Scoring</option>
+        <option value="2">Passing</option>
+        <option value="3">Rebounding</option>
+        <option value="4">Fouling</option>
+    <hr>
+    <center>
+    <button onclick="location.href='{% url 'script' %}'">Submit</button>
+    </center>
+    <hr>
+    <center>
+    {% if data %}
+        {{data}}
+    {% endif %}
+    </center>
+</body>
+</html>

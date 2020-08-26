@@ -5,20 +5,40 @@
 </head>
 <body>
     <center><h1>NBA Player Comparison</h1></center>
-    <hr>
+    <center>
     <b>Primary Skill</b>
+    </center>
+    <p>
+    <center>
+    <select>
         <option value="1">Scoring</option>
         <option value="2">Passing</option>
         <option value="3">Rebounding</option>
         <option value="4">Fouling</option>
-    <hr>
+    </select>
+    </center>
+    </p>
+    <center>
+    <b>Position</b>
+    </center>
+    <p>
+    <center>
+    <select>
+        <option value="1">Point Guard</option>
+        <option value="2">Shooting Guard</option>
+        <option value="3">Small Forward</option>
+        <option value="4">Power Forward</option>
+        <option value="5">Center</option>
+    </select>
+    </center>
+    </p>
     <center>
     <button onclick="location.href='{% url 'script' %}'">Submit</button>
     </center>
     <hr>
     <center>
     {% if data %}
-        {{data}}
+    <h1>{{data}}</h1>
     {% endif %}
     </center>
 </body>
